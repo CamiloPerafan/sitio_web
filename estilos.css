@@ -1,0 +1,259 @@
+*{
+	margin:  2px;
+	padding: 0px;
+}
+body{
+	background-image: url(https://www.unicauca.edu.co/versionP/sites/default/files/files/esculoylogo-02.png) ;
+}
+
+/*CABEZA*/
+#contenido{
+	width: 80%; /*abarca de toda la pantalla*/
+	border: 2px solid black;
+	margin: 2px auto;
+}
+header{
+	height: 150px; /*tamaño total*/
+	width: 100%;  /*total espacio coloreado*/
+	background: blue; /*color de fondo*/
+	line-height: 150px; /*ubicacion texto*/
+	text-align: center;
+	margin: 0px;
+	color: white; /*color letras*/
+	background-image: url(http://www.afacom.org/images/uni-cauca-tira_ll_2.jpg);
+}
+
+/*nav*/
+nav ul li{
+	float: left; /*organiza horizontalmente*/
+	margin: 10px;
+	line-height: 25px; /*distancia a cabeza*/
+
+	list-style: none;/*quita los puntos*/
+	padding: 0;
+	font-family: arial;
+}
+a{
+	text-decoration: none; /*quita lineas letras*/
+	color: white; /*color letras*/
+	padding: 0px;
+	display: block;
+}
+li a:hover{
+	background: #F71A08; /*ilumina*/
+}
+nav{
+	background: #D82415; /*fondo*/
+	border: 2px solid black; /*borde*/
+	padding-left: 350px;
+	height: 50px /*tamaño total*/
+}
+/*INICIO*/
+
+#nombre0{
+	text-align: center;
+	padding: 30px;
+}
+#nombre1,
+#nombre2{
+	text-align: center;
+}
+
+.ordenar{
+	clear: both;
+}
+#informacion{
+	float: left;
+	width: 100%;
+	min-height: 300px;
+	background: #ffffd5; /*color fondo*/
+	font-family: Arial;	
+}
+.center{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 20px;	
+}
+
+footer{
+	line-height: 50px;
+	background: red;
+	text-align: center;
+	color: white;
+}
+
+/*ESTUDIOS.HTML*/
+/*Esquema*/
+#informacion2{
+	float: left;
+	width: 100%;
+	min-height: 300px;
+	background: #ffffd5;
+	font-family: Arial;
+}
+table{
+	margin-top: 10px;
+	margin-right: auto;
+	margin-left: auto;
+	border-collapse: collapse;
+	/*caption-side: bottom;*/ /*coloca estudios... abajo*/
+}
+th{
+	background-color: black;
+	color: white;
+}
+caption{
+	padding-top: 20px;
+	font-style: arial;
+}
+td,th{
+	border: 2px solid black;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+/*PROYECTOS.HTML*/
+/*informacion3*/
+#listado{
+	float: left;
+	width: 100%;
+	min-height: 300px;
+	background: #ffffd5;
+	font-family: Arial;
+}
+
+/*PASATIEMPOS.HTML*/
+
+#informacion4{
+	float: left;
+	width: 100%;
+	min-height: 300px;
+	background: #ffffd5;
+	margin: auto;
+}
+ul,li{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+ul.slider{
+	position: relative;
+	width: 800px;
+	height: 300px;
+}
+ul.slider li{
+	position: absolute;
+	left: 0;
+	top: 0;
+	opacity: 0; /*ocultar elementos*/
+	width: inherit;
+	height: inherit;
+	transition: opacity .5s;
+
+}
+ul.slider li img{
+	width: 70%;
+	height: 300px;
+	object-fit: cover;
+
+}
+ul.slider li:first-child {
+	opacity: 1;
+}
+ul.slider li:target {
+	opacity: 1;
+}
+
+
+/*ceacion de los botones 1-4*/
+.menu{
+	text-align: center;
+	margin: 20px;
+}
+.menu li{
+	display: inline-block;
+	text-align: center;
+}
+.menu li a{
+	display: inline-block;
+	color: white;
+	text-decoration: none;
+	background-color: grey;
+	padding: 10px;
+	width: 20px;
+	height: 20px;
+	font-size: 20px;
+	border-radius: 100%;
+}
+.textosobreimg1,
+.textosobreimg2,
+.textosobreimg3,
+.textosobreimg4{
+	display: block;
+	position: absolute;
+	bottom: 0px;
+	z-index: 10;
+	background: rgba(0,0,0,4);
+	width: 69%;
+	height: 15%;
+	padding: .3em;
+	color: white; 
+	display: block;
+}
+
+/*CONTACTO.HTML*/
+.form-registro{
+	width: 400px;
+	background: #24303c;
+	padding: 30px;
+	margin: auto;
+	margin-top: 10px;
+	border-radius: 4px;
+	font-family: 'caibri';
+	color: white;
+	text-align: center;
+	box-shadow: 7px 13px 37px #000;
+
+}
+.form-registro h4{
+	font-size: 22px;
+	margin-bottom: 20px;
+}
+.controls{
+	width: 100%;
+	background: #24303c;
+	padding: 10px;
+	border-radius: 4px;
+	margin-bottom: 16px;
+	border: 1px solid #1f53c5;
+	font-family: 'calibri';
+	font-size: 18px;
+	color:  white;
+}
+.form-registro p{
+	height: 40px;
+	text-align: center;
+	font-size: 18px;
+}
+.form-registro a{
+	color: white;
+	text-decoration: none;
+}
+
+.form-registro a: hover{
+	color: white;
+	text-decoration: underline;
+}
+
+.form-registro .botons{
+	width: 50%;
+	background: #1f53c5;
+	border: none;
+	padding: 12px;
+	color: white;
+	margin: 16px 0;
+	font-size: 16px;
+}
